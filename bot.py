@@ -19,7 +19,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     text = "<b>Vui lòng gửi thông tin theo cú pháp:</b>\nDòng 1: Số tài khoản\nDòng 2: Tên ngân hàng\nDòng 3: Số tiền chuyển\nDòng 4: Nội dung chuyển\n\n<b>Ví dụ:</b>\n38333333333888\nmbbank\n1,000,000\nChuc mung sinh nhat em"
 
-    await context.bot.send_message(chat_id=update.effective_chat.id, text=text,reply_markup=reply_markup, parse_mode=constants.ParseMode.HTML)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=text, parse_mode=constants.ParseMode.HTML)
 
 
 async def messageHandler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
